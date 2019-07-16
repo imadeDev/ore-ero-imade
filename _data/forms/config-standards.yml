@@ -6,32 +6,35 @@ formGroups:
   - preset: schemaVersion
   - preset: selectStandard
   - widget: string-i18n
-    title: Name
+    title: name
     rule: alphanum-space
   - preset: description
+  - widget: string-i18n
+    title: specURL
+    type: url
+  - widget: string-i18n
+    title: standardOrg
+  - preset: tags
+  - preset: hr
+  - preset: empty
+    start: true
+    title: administrations
+  - preset: adminCode
+  - widget: group
+    title: reference
+    fields:
+      - widget: string-i18n
+        title: URL
+        type: url
+      - widget: string-i18n
+        title: name
+        rule: names
   - preset: dates
     created: true
     metadata: true
-  - widget: string-i18n
-    title: SpecURL
-    type: url
   - widget: string
-    title: StandardOrg
-  - preset: tags
-  - preset: hr
-  - preset: adminCode
-  - widget: group
-    title: Reference
-    fields:
-      - widget: string-i18n
-        title: Url
-        type: url
-      - widget: string-i18n
-        title: Name
-        rule: names
-  - widget: string
-    title: Status
-  - widget: string
-    type: email
-    title: emailContact
-    required: false
+    title: status
+  - preset: contact
+    phone: false
+    required: true
+  - preset: empty
