@@ -1,0 +1,43 @@
+---
+schemaVersion: str()
+description:
+  whatItDoes:
+    en: str()
+    fr: str()
+  howItWorks:
+    en: str(required=False)
+    fr: str(required=False)
+name:
+  en: str()
+  fr: str()
+specURL:
+  en: str()
+  fr: str()
+standardAcronym: str()
+standardOrg:
+  en: str()
+  fr: str()
+tags:
+  en:
+    - str()
+  fr:
+    - str()
+administrations:
+  - adminCode: str()
+    contact:
+      email: str()
+      name: str(required=False)
+    date:
+      created: str()
+      metadataLastUpdated: str()
+    references:
+      - URL:
+          en: str()
+          fr: str()
+        name:
+          en: str()
+          fr: str()
+    status: enum('deprecated', 'mandatory', 'preferred')
+    team:
+      en: str(required=False)
+      fr: str(required=False)

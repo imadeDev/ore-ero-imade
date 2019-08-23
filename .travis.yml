@@ -3,12 +3,12 @@ rvm:
 - 2.6.0
 
 jdk:
-- oraclejdk8
+- openjdk12
 
 install:
 - bundle install
 - pip install --user html5validator
-- pip install --user yamale
+- pip install --user yamale==1.10.1
 - npm install
 - pip install --user yamllint
 
@@ -18,7 +18,8 @@ script:
 - html5validator --root _site/
 - yamale -s schemaCode.yaml _data/code
 - yamale -s schemaAdmin.yaml _data/administrations
-- yamale -s schemaOss.yaml _data/logiciels_libres-open_source_software
+- yamale -s schemaSoftware.yaml _data/software
+- yamale -s schemaStandard.yaml _data/standard
 - npm run lint
 - yamllint -d configYamlLint.yml _data
 

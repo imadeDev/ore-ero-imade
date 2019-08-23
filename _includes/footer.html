@@ -35,27 +35,30 @@
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
 <![endif]-->
 <script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>
-<script type="text/javascript" src="../assets/js/lib/js-yaml.js"></script>
-<script type="text/javascript" src="../assets/js/src/deep-object.js"></script>
-<script type="text/javascript" src="../assets/js/src/git-file-manager.js"></script>
-<script type="text/javascript" src="../assets/js/src/custom-form-validation.js"></script>
-<script type="text/javascript" src="../assets/js/src/validation.js"></script>
-<script type="text/javascript" src="../assets/js/src/tags.js"></script>
-<script type="text/javascript" src="../assets/js/src/programmingLanguages.js"></script>
+<script src="../assets/js/lib/js-yaml.js"></script>
+<script src="../assets/js/src/deep-object.js"></script>
+<script src="../assets/js/src/git-file-manager.js"></script>
+<script src="../assets/js/src/custom-form-validation.js"></script>
+<script src="../assets/js/src/validation.js"></script>
+<script src="../assets/js/src/tags.js"></script>
+<script src="../assets/js/src/programmingLanguages.js"></script>
+<script src="../assets/js/src/more-group.js"></script>
+<script src="../assets/js/src/date.js"></script>
+<script src="../assets/js/src/slugify.js"></script>
 {%- if page.ref == "adminForm" -%}
-<script type="text/javascript" src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/adminForm.js"></script>
 {%- endif -%}
 {%- if page.ref == "codeForm" -%}
-<script type="text/javascript" src="../assets/js/src/adminForm.js"></script>
-<script type="text/javascript" src="../assets/js/src/codeForm.js"></script>
+<script src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/codeForm.js"></script>
 {%- endif -%}
-{%- if page.ref == "standardsForm" -%}
-<script type="text/javascript" src="../assets/js/src/adminForm.js"></script>
-<script type="text/javascript" src="../assets/js/src/standardsForm.js"></script>
+{%- if page.ref == "standardForm" -%}
+<script src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/standardForm.js"></script>
 {%- endif -%}
-{%- if page.ref == "ossForm" -%}
-<script type="text/javascript" src="../assets/js/src/adminForm.js"></script>
-<script type="text/javascript" src="../assets/js/src/ossForm.js"></script>
+{%- if page.ref == "softwareForm" -%}
+<script src="../assets/js/src/adminForm.js"></script>
+<script src="../assets/js/src/softwareForm.js"></script>
 {%- endif %}
 <script>
   const REPO_NAME = "{{ site.github_repository }}";

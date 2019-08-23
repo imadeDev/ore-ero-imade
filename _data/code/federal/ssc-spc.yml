@@ -8,19 +8,22 @@ releases:
       created: '2013-10-06'
       metadataLastUpdated: '2019-01-31'
     description:
-      en: Subscribe And Recursively Re-advertise Ad nauseam to Communicate Everything Nearly Instantly and Always
-      fr: Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer Instantanément et Ad vitam aeternam
-    languages:
-      - Python
-      - C
+      whatItDoes:
+        en: >-
+          Subscribe And Recursively Re-advertise Ad nauseam to Communicate
+          Everything Nearly Instantly and Always
+        fr: >-
+          Souscrire, Annoncer, et Recursivement Re-annoncer Afin de Communiquer
+          Instantanément et Ad vitam aeternam
+    category: '43232300'
     name:
       en: MetPX-Sarracenia
       fr: MetPX-Sarracenia
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
           fr: 'https://github.com/MetPX/sarracenia/blob/master/LICENSE'
-        spdxID: GPL-2.0
+        spdxID: GPL-2.0-only
     repositoryURL:
       en: 'https://github.com/MetPX/sarracenia'
       fr: 'https://github.com/MetPX/sarracenia'
@@ -33,19 +36,23 @@ releases:
         - Météo
         - Données
         - Communication
-    vcs: git
+    languages:
+      - Python
+      - C
   - contact:
       email: john.bain2@canada.ca
     date:
       created: '2018-12-09'
       metadataLastUpdated: '2019-03-06'
     description:
-      en: Enterprise architecture models
-      fr: Modèles d'architecture d'entreprise
+      whatItDoes:
+        en: Enterprise architecture models
+        fr: Modèles d'architecture d'entreprise
+    category: '43232400'
     name:
       en: GC Architecture
       fr: Architecture GC
-    licenses:
+    licences:
       - URL:
           en: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'
           fr: 'https://github.com/canada-ca/architecture/blob/master/LICENSE'

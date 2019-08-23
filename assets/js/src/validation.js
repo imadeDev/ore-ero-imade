@@ -31,25 +31,25 @@ const ALERT_SUCCESS = 2;
 const ALERT_OFF = 3;
 
 function toggleAlert(option) {
-  let alertInProgress = document.getElementById('prbotSubmitAlertInProgress');
-  let alertFail = document.getElementById('prbotSubmitAlertFail');
-  let alertSuccess = document.getElementById('prbotSubmitAlertSuccess');
+  let alertInProgress = $('#prbotSubmitAlertInProgress');
+  let alertFail = $('#prbotSubmitAlertFail');
+  let alertSuccess = $('#prbotSubmitAlertSuccess');
   if (option == ALERT_IN_PROGRESS) {
-    alertInProgress.style.display = 'block';
+    alertInProgress.removeClass('hide');
   } else if (option == ALERT_FAIL) {
-    alertFail.style.display = 'block';
+    alertFail.removeClass('hide');
   } else if (option == ALERT_SUCCESS) {
-    alertSuccess.style.display = 'block';
+    alertSuccess.removeClass('hide');
   } else if (option == ALERT_OFF) {
-    alertInProgress.style.display = 'none';
-    alertFail.style.display = 'none';
-    alertSuccess.style.display = 'none';
+    alertInProgress.addClass('hide');
+    alertFail.addClass('hide');
+    alertSuccess.addClass('hide');
   } else {
     console.log('Invalid alert option');
   }
 }
 
-function submitConclusion(response, submitButton, resetButton) {
+function submitConclusion(response, submitButton, resetButton, url) {
   if (response.status != 200) {
     toggleAlert(ALERT_OFF);
     toggleAlert(ALERT_FAIL);
@@ -60,8 +60,8 @@ function submitConclusion(response, submitButton, resetButton) {
     toggleAlert(ALERT_SUCCESS);
     // Redirect to home page
     setTimeout(function() {
-      window.location.href = './index.html';
-    }, 2000);
+      window.location.href = url;
+    }, 3000);
   }
 }
 
